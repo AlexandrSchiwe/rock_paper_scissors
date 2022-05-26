@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <main>
+        <section id="radio-input">
+            <input class="radio" type="radio" name="rounds" checked value="5" id="radio5">
+            <label for="">5 Rounds</label>
+            <input class="radio" type="radio" name="rounds" id="" value="10">
+            <label for="">10 Rounds</label>
+            <input class="radio" type="radio" name="rounds" id="" value="15">
+            <label for="5">15 Rounds</label>
+            <input class="radio" type="radio" name="rounds" id="" value="20">
+            <label for="5">20 Rounds</label>
+            <!-- <input id="btn" type="button" value="CheckValue" onclick="checkValue()"> -->
+            <!-- Versuch den Value des Radio inputs rauszufinden  -->
+        </section>
+        <h2 class="scoreboard">
+            Player <span id="p-score">0</span> - <span id="c-score">0</span> Computer
+        </h2>
+        <h2 id="result"></h2>
+
+        <div class="action">
+            <div class="options" value="Rock">
+
+            </div>
+
+            <div class="options" value="Paper">
+
+            </div>
+            <div class="options" value="Scissors">
+
+            </div>
+        </div>
+        <div id="button">
+            <button type="submit" onClick="restart()">Restart</button>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
